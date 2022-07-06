@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="j9m-Ho-RQN">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="57" y="144" width="300" height="300"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBC-5a-1iX">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="j9m-Ho-RQN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NUk-OJ-xii"/>
-                            <constraint firstItem="j9m-Ho-RQN" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="rrO-3K-0vf"/>
+                            <constraint firstItem="j9m-Ho-RQN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="VBa-Pd-dYs"/>
                         </constraints>
                     </view>
                     <connections>
