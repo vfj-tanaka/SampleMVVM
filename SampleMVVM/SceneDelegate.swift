@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
         window.makeKeyAndVisible()
-        guard let vc = UIStoryboard.init(name: "First", bundle: nil).instantiateInitialViewController() else { return }
+        guard let vc = UIStoryboard.init(name: "Sample", bundle: nil).instantiateInitialViewController() else { return }
         window.rootViewController = vc
     }
     
