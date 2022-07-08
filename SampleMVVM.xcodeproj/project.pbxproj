@@ -19,10 +19,8 @@
 		FCB4BA8B2873CD28001F3E94 /* SampleMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BA8A2873CD28001F3E94 /* SampleMVVMTests.swift */; };
 		FCB4BA952873CD28001F3E94 /* SampleMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BA942873CD28001F3E94 /* SampleMVVMUITests.swift */; };
 		FCB4BA972873CD28001F3E94 /* SampleMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BA962873CD28001F3E94 /* SampleMVVMUITestsLaunchTests.swift */; };
-		FCB4BAA42873CF8D001F3E94 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BAA32873CF8D001F3E94 /* FirstViewController.swift */; };
-		FCB4BAA62873CFBB001F3E94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BAA52873CFBB001F3E94 /* SecondViewController.swift */; };
-		FCB4BAB22873D4EF001F3E94 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB4BAB12873D4EF001F3E94 /* First.storyboard */; };
-		FCB4BAB42873D501001F3E94 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB4BAB32873D501001F3E94 /* Second.storyboard */; };
+		FCB4BAA42873CF8D001F3E94 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BAA32873CF8D001F3E94 /* SampleViewController.swift */; };
+		FCB4BAB22873D4EF001F3E94 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB4BAB12873D4EF001F3E94 /* Sample.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +54,8 @@
 		FCB4BA902873CD28001F3E94 /* SampleMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB4BA942873CD28001F3E94 /* SampleMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMUITests.swift; sourceTree = "<group>"; };
 		FCB4BA962873CD28001F3E94 /* SampleMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FCB4BAA32873CF8D001F3E94 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FCB4BAA52873CFBB001F3E94 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		FCB4BAB12873D4EF001F3E94 /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
-		FCB4BAB32873D501001F3E94 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		FCB4BAA32873CF8D001F3E94 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		FCB4BAB12873D4EF001F3E94 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCB25DEE287825E30086F8B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCB25DE82877BFE10086F8B2 /* ValidationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCB25DEF287825EB0086F8B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCB4BAB12873D4EF001F3E94 /* Sample.storyboard */,
+				FCB4BAA32873CF8D001F3E94 /* SampleViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCB25DF0287825F90086F8B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCB25DEA2877CE6D0086F8B2 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		FCB4BA672873CD25001F3E94 = {
 			isa = PBXGroup;
 			children = (
@@ -115,12 +136,9 @@
 			children = (
 				FCB4BA732873CD25001F3E94 /* AppDelegate.swift */,
 				FCB4BA752873CD25001F3E94 /* SceneDelegate.swift */,
-				FCB25DE82877BFE10086F8B2 /* ValidationModel.swift */,
-				FCB25DEA2877CE6D0086F8B2 /* ViewModel.swift */,
-				FCB4BAB12873D4EF001F3E94 /* First.storyboard */,
-				FCB4BAA32873CF8D001F3E94 /* FirstViewController.swift */,
-				FCB4BAB32873D501001F3E94 /* Second.storyboard */,
-				FCB4BAA52873CFBB001F3E94 /* SecondViewController.swift */,
+				FCB25DEE287825E30086F8B2 /* Model */,
+				FCB25DEF287825EB0086F8B2 /* View */,
+				FCB25DF0287825F90086F8B2 /* ViewModel */,
 				FCB4BA7C2873CD28001F3E94 /* Assets.xcassets */,
 				FCB4BA7E2873CD28001F3E94 /* LaunchScreen.storyboard */,
 				FCB4BA812873CD28001F3E94 /* Info.plist */,
@@ -257,10 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB4BAB42873D501001F3E94 /* Second.storyboard in Resources */,
 				FCB4BA802873CD28001F3E94 /* LaunchScreen.storyboard in Resources */,
 				FCB4BA7D2873CD28001F3E94 /* Assets.xcassets in Resources */,
-				FCB4BAB22873D4EF001F3E94 /* First.storyboard in Resources */,
+				FCB4BAB22873D4EF001F3E94 /* Sample.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB25DE92877BFE10086F8B2 /* ValidationModel.swift in Sources */,
-				FCB4BAA62873CFBB001F3E94 /* SecondViewController.swift in Sources */,
-				FCB4BAA42873CF8D001F3E94 /* FirstViewController.swift in Sources */,
+				FCB4BAA42873CF8D001F3E94 /* SampleViewController.swift in Sources */,
 				FCB4BA742873CD25001F3E94 /* AppDelegate.swift in Sources */,
 				FCB25DEB2877CE6D0086F8B2 /* ViewModel.swift in Sources */,
 				FCB4BA762873CD25001F3E94 /* SceneDelegate.swift in Sources */,

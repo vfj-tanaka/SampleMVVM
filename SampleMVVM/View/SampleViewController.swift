@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SampleViewController.swift
 //  SampleMVVM
 //
 //  Created by mtanaka on 2022/07/05.
@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class FirstViewController: UIViewController {
+final class SampleViewController: UIViewController {
     
     @IBOutlet private weak var idTextField: UITextField!
     @IBOutlet private weak var passTextField: UITextField!
