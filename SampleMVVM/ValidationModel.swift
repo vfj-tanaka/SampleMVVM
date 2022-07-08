@@ -39,5 +39,7 @@ enum ValidationResult {
         }
     }
     
-    
+    final class ValidationModel {
+        
+    }
 }
