@@ -38,6 +38,22 @@ enum ValidationResult {
         case .blankError, .confirmError: return .red
         }
     }
-    
-    
+}
+
+final class ValidationModel {
+    //[String]の中に空文字があればfalse
+    func blankValidation(text: [String]) -> Bool {
+        
+        for text in text {
+            if text.isEmpty {
+                return false
+            }
+        }
+        return true
+    }
+    // パスワードと確認用が一致してなかったらfalse
+    func confirmValidation(pass: String, confirm: String) -> Bool {
+        
+        return pass == confirm
+    }
 }
