@@ -68,7 +68,7 @@
                     <connections>
                         <outlet property="confirmTextField" destination="mON-Ei-td6" id="lXo-5e-HlP"/>
                         <outlet property="idTextField" destination="gBC-5a-1iX" id="LMl-Bf-7Rv"/>
-                        <outlet property="passTextField" destination="mON-Ei-td6" id="RYZ-n6-5aw"/>
+                        <outlet property="passTextField" destination="NLa-HR-GVW" id="m3K-Nl-Cm0"/>
                         <outlet property="registerButton" destination="16h-dg-1X6" id="XF4-tV-LKN"/>
                         <outlet property="statusLabel" destination="IRI-of-LgK" id="s4t-fE-wNa"/>
                     </connections>

@@ -19,33 +19,33 @@ final class SampleViewController: UIViewController {
     
     private var viewModel: ViewModel!
     private let disposeBag = DisposeBag()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            bindInputStream()
-        }
+        bindInputStream()
+    }
+    
+    private func bindInputStream() {
         
-        private func bindInputStream() {
-            
-            self.viewModel = ViewModel(
-                input: (
-                    idTextField.rx.text.orEmpty.asDriver(),
-                    passTextField.rx.text.orEmpty.asDriver(),
-                    confirmTextField.rx.text.orEmpty.asDriver()
-                )
+        self.viewModel = ViewModel(
+            input: (
+                idTextField.rx.text.orEmpty.asDriver(),
+                passTextField.rx.text.orEmpty.asDriver(),
+                confirmTextField.rx.text.orEmpty.asDriver()
             )
+        )
+        
+        viewModel.validationResult.drive(onNext: { Validationresult in
             
-            viewModel.validationResult.drive(onNext: { Validationresult in
-                
-                self.registerButton.isEnabled = Validationresult.isValidated
-                self.statusLabel.text = Validationresult.text
-                self.statusLabel.textColor = Validationresult.color
-            }).disposed(by: disposeBag)
-        }
+            self.registerButton.isEnabled = Validationresult.isValidated
+            self.statusLabel.text = Validationresult.text
+            self.statusLabel.textColor = Validationresult.color
+        }).disposed(by: disposeBag)
+    }
     
     @IBAction private func tappedRegisterButton(_ sender: Any) {
         
-        
+        Alert.autoCloseAlert(vc: self, title: "登録", message: "")
     }
 }

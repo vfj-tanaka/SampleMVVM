@@ -43,8 +43,8 @@ final class ViewModel {
         }
         
         validationResult = Driver.combineLatest(
-        blankValidation,
-        confirmValidation
+            blankValidation,
+            confirmValidation
         ) { blankValidation, confirmValidation in
             if !blankValidation {
                 return .blankError

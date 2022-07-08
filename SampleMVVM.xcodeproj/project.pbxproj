@@ -12,6 +12,7 @@
 		FCB25DE528752EBE0086F8B2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FCB25DE428752EBE0086F8B2 /* RxSwift */; };
 		FCB25DE92877BFE10086F8B2 /* ValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25DE82877BFE10086F8B2 /* ValidationModel.swift */; };
 		FCB25DEB2877CE6D0086F8B2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25DEA2877CE6D0086F8B2 /* ViewModel.swift */; };
+		FCB25DF3287827450086F8B2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25DF2287827450086F8B2 /* Alert.swift */; };
 		FCB4BA742873CD25001F3E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BA732873CD25001F3E94 /* AppDelegate.swift */; };
 		FCB4BA762873CD25001F3E94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BA752873CD25001F3E94 /* SceneDelegate.swift */; };
 		FCB4BA7D2873CD28001F3E94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB4BA7C2873CD28001F3E94 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		FCB25DE82877BFE10086F8B2 /* ValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationModel.swift; sourceTree = "<group>"; };
 		FCB25DEA2877CE6D0086F8B2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FCB25DF2287827450086F8B2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		FCB4BA702873CD25001F3E94 /* SampleMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB4BA732873CD25001F3E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB4BA752873CD25001F3E94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FCB25DF1287827250086F8B2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FCB25DF2287827450086F8B2 /* Alert.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		FCB4BA672873CD25001F3E94 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 				FCB25DEE287825E30086F8B2 /* Model */,
 				FCB25DEF287825EB0086F8B2 /* View */,
 				FCB25DF0287825F90086F8B2 /* ViewModel */,
+				FCB25DF1287827250086F8B2 /* Utility */,
 				FCB4BA7C2873CD28001F3E94 /* Assets.xcassets */,
 				FCB4BA7E2873CD28001F3E94 /* LaunchScreen.storyboard */,
 				FCB4BA812873CD28001F3E94 /* Info.plist */,
@@ -302,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB25DF3287827450086F8B2 /* Alert.swift in Sources */,
 				FCB25DE92877BFE10086F8B2 /* ValidationModel.swift in Sources */,
 				FCB4BAA42873CF8D001F3E94 /* SampleViewController.swift in Sources */,
 				FCB4BA742873CD25001F3E94 /* AppDelegate.swift in Sources */,
